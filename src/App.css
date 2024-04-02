@@ -1,0 +1,49 @@
+.App {
+  border: solid 5px #37dcce;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 100vh;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 35px;
+  margin: 20px 0;
+  transform: rotate(-10deg);
+  text-align: center;
+}
+
+.dadas {
+  color: #37dcce;
+  text-shadow: 2px 2px #2e8b82
+}
+
+.puxadas {
+  color: #ff4f9d;
+  text-shadow: 2px 2px #9c3060
+}
+
+.lixadas {
+  color: #dc4eff;
+  text-shadow: 2px 2px #8b31a1
+}
