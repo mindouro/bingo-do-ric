@@ -4,7 +4,8 @@
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  height: 100vh;
+  /* height: 100vh; */
+  height: calc(var(--vh, 1vh) * 100); /* This uses the JS calculated vh */
 }
 
 .container {
