@@ -1,25 +1,26 @@
 .wrapper {
-  border: solid 3px #37dcce;
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%; 
   text-align: center;
-  min-height: 75px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex:1;
 }
 
-.contador {
-  margin: 0 10px;
+.wrapper-palavra {
+  flex: 4;
+  margin: 5px;
+}
 
-  button {
-    margin: 3px 5px;
-  }
+.contador {
+  font-size: 10px;
 }
 
 .palavra {
-  margin: 5px 0;
+  margin: 0;
+  font-family: "Archivo Black";
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .riscada {
@@ -27,9 +28,8 @@
 }
 
 button {
-  border: 0;
-  background-color: initial;
-  font-size: 20px;
+  aspect-ratio : 1 / 1;
+  flex: 1;
 }
 
 /* CSS */
@@ -44,7 +44,6 @@ button {
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -76,3 +75,11 @@ button {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+.button-30:disabled {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+  color: #D6D6E7;
+  text-shadow: 1px 1px #393939;
+}
+

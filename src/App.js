@@ -19,10 +19,10 @@ function App() {
     <div className="App">
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+        url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=VT323&display=swap');
       </style>
 
-      <div className="container">
+      <div className="container container-dadas">
         <h2 className="dadas">dadas x1</h2>
         <ul>
           {dadas.map((palavra, i) => (
@@ -30,7 +30,8 @@ function App() {
           ))}
         </ul>
       </div>
-      <div className="container">
+
+      <div className="container container-puxadas">
         <h2 className="puxadas">puxadas x2</h2>
         <ul>
           {puxadas.map((palavra, i) => (
@@ -38,7 +39,8 @@ function App() {
           ))}
         </ul>
       </div>
-      <div className="container">
+
+      <div className="container container-lixadas">
         <h2 className="lixadas">lixadas x3</h2>
         <ul>
           {lixadas.map((palavra, i) => (
