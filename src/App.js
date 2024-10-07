@@ -5,10 +5,13 @@ import { useEffect } from "react";
 
 const pegaTrêsRandom = (array) => {
   // Shuffle array
-  const shuffled = array.sort(() => 0.5 - Math.random());
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1)); // Pick a random index from 0 to i
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
 
   // Get sub-array of first 4 elements after shuffled
-  return shuffled.slice(0, 4);
+  return array.slice(0, 4);
 };
 
 function setRealVh() {
